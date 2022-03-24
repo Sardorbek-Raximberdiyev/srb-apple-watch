@@ -13,7 +13,7 @@ body{
 }
 
 *:focus{
-  outline: 1px dashed blue;
+  outline: 2px dashed rgb(255, 0, 157);
   outline-offset: 3px;
 }
 
@@ -50,6 +50,14 @@ body{
   height: 42px;
 }
 
+.site-hero-logo-img:hover{
+  opacity: 0.8;
+}
+
+.site-hero-logo-img:active{
+  opacity: 0.6;
+}
+
 .sitenav {
   display: flex;
   align-items: center;
@@ -59,6 +67,7 @@ body{
 }
 
 .site-header-list {
+  margin: 0;
   display: flex;
   padding: 0;
   margin-right: 40px;
@@ -66,17 +75,32 @@ body{
 }
 
 .site-header-item-link{
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 3px;
   text-decoration: none;
   color: #333;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.4s ease;
 }
 
 .site-header-item:not(:last-child){
   margin-right: 30px;
 }
 
+.site-header-item-link:hover{
+  border-bottom: 3px solid #333;
+}
+
 .sitenav-header-link {
-  text-decoration: none;
+  width: 153px;
+  font-size: 15px;
+  line-height: 23px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  font-family: "Roboto", "Arial", sans-serif;
   color: #666666;
+  border: 0;
   border-bottom: 1px solid #333;
 }
 
@@ -87,14 +111,10 @@ body{
   flex-grow: 1;
 }
 
-.site-hero {
-  display:block;
+.site-main-hero{
   background-image: url(../images/intro-bg.png);
-  background-size: 587 565;
   background-repeat: no-repeat;
-  background-position: 735px center;
-  border-bottom: 2px solid #ddd;
-  margin-right: -293px;
+  background-position: left calc(50% + 470px) bottom ;
 }
 
 .site-hero-buy{
@@ -146,6 +166,21 @@ body{
   text-align: center;
 }
 
+.site-hero-link:hover{
+  opacity: 0.8;
+}
+
+.site-hero-link:active{
+  opacity: 0.6;
+}
+
+.site-hero-hr{
+  margin: 0;
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+}
+
 .hero-bottom{
   padding-top: 70px;
   padding-bottom: 70px;
@@ -193,7 +228,7 @@ body{
 }
 
 .retangle{
-  display: block;
+  display: inline-block;
   width: 8px;
   height: 8px;
   background-color: #ddd;
@@ -210,19 +245,28 @@ body{
   background-color: #EA625C;
 }
 
-.retangle-text{
+.retangle-link{
+  display: inline-block;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
   color: #EA625C;
+  text-decoration: none;
+}
+
+.retangle-link:hover{
+  opacity: 0.8;
+}
+
+.retangle-link:active{
+  opacity: 0.6;
 }
 
 /* SITE-FOOTER */
 .site-footer {
   background-image: url(../images/runners.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
+  background-size: cover;
   color: #fff;
 }
 
@@ -236,13 +280,7 @@ body{
   margin-left: auto;
 }
 
-.site-footer-heading {
-}
+
 .site-footer-content {
   border-left: 3px solid #fff;
-
-}
-.site-footer-text {
-}
-.site-footer-link {
 }
