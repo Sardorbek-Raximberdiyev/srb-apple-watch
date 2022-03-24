@@ -201,11 +201,14 @@ body{
   padding: 0;
   margin: 0;
   list-style-type: none;
-  justify-content: space-between;
 }
 
 .site-content-item {
   width: 280px;
+}
+
+.site-content-item:not(:last-child){
+  margin-right: 80px;
 }
 
 .site-content-title {
@@ -220,38 +223,39 @@ body{
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-.site-retangle{
-  display: flex;
-  align-items: center;
-}
-
-.retangle{
-  display: inline-block;
+.site-retangles{
   width: 8px;
   height: 8px;
+  border: 0;
+  margin: 0;
   background-color: #ddd;
-}
+  box-shadow: 16px 0 0 0 #ddd,
+    32px 0 0 0 #ddd;
 
-.retangle:not(:last-child){
-  margin-right: 10px;
-}
-
-.retangle-bottom{
-  width: 40px;
-  height: 3px;
-  margin-right: 10px;
-  background-color: #EA625C;
 }
 
 .retangle-link{
-  display: inline-block;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
   color: #EA625C;
   text-decoration: none;
+  align-items: center;
+}
+
+.retangle-link::before{
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #EA625C;
+  content: "";
 }
 
 .retangle-link:hover{
@@ -283,4 +287,21 @@ body{
 
 .site-footer-content {
   border-left: 3px solid #fff;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .site-footer{
+    background-image: url(../images/runners@2x.jpg);
+  }
+
+  .site-main-hero{
+    background-image: url(../images/intro-bg@2x.png);
+  }
 }
