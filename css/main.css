@@ -17,6 +17,10 @@ body{
   outline-offset: 3px;
 }
 
+form:focus{
+  outline: none;
+}
+
 .container{
   width: 100%;
   max-width: 1040px;
