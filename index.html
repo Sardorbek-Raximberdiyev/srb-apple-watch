@@ -12,39 +12,42 @@
 
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
-<!-- <link rel="stylesheet" href="css/styles.min.css"> -->
 </head>
 <body>
+
   <header class="site-header">
-    <div class="container">
-      <div class="site-header-child">
-        <a href="#" class="site-header-logo-link">
-          <img class="site-hero-logo-img" src="images/header-logo.svg" alt="apple-logo"  width="35" height="42">
+    <div class="site-header__container container">
+      <div class="site-header__header-content header-content">
+        <a class="header-content__link" href="#">
+          <img class="header-content__img" src="images/header-logo.svg" alt="apple-logo"  width="35" height="42">
         </a>
-        <nav class="sitenav">
-          <ul class="site-header-list">
-            <li class="site-header-item"><a class="site-header-item-link" href="index.html">Home</a></li>
-            <li class="site-header-item"><a class="site-header-item-link" href="index.html">About</a></li>
-            <li class="site-header-item"><a class="site-header-item-link" href="index.html">Offers</a></li>
-            <li class="site-header-item"><a class="site-header-item-link" href="index.html">Services</a></li>
+        <nav class="header-content__sitenav sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item"><a class="sitenav__link" href="index.html">Home</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="index.html">About</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="index.html">Offers</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="index.html">Services</a></li>
           </ul>
-          <form action="https://google.com" method="GET">
-            <input class="sitenav-header-link" type="text" placeholder="How can we help you?" aria-label="How can we help you?" required>
+          <form class="sitenav__form" action="https://google.com" method="GET">
+            <input class="sitenav__input" type="text" placeholder="How can we help you?" aria-label="How can we help you?" required>
           </form>
         </nav>
       </div>
     </div>
   </header>
+
+
   <!-- SITE-MAIN -->
-  <main class="site-main">
-      <div class="site-main-hero">
-        <div class="container">
-          <div class="site-hero">
-            <div class="site-hero-buy">
+
+  <main class="main-content">
+      <div class="main-content__hero hero">
+        <div class="hero__container container">
+          <div class="hero__block">
+            <div class="hero__box">
               <div>
-                <h2 class="site-hero-heading hero-heading">Freedom calls.</h2>
-                <div class="site-hero-content">
-                  <p class="site-hero-text hero-text">Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it all while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.</p>
+                <h2 class="hero__heading">Freedom calls.</h2>
+                <div class="hero__content-text">
+                  <p class="hero__text hero-text">Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it all while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.</p>
                 </div>
                 <a class="site-hero-link" href="#">Watch the keynote</a>
               </div>
@@ -95,7 +98,9 @@
 
   </main>
 
+
       <!-- SITE-FOOTER -->
+
   <footer class="site-footer">
     <div class="site-footer-block container">
       <div class="site-footer-but">
