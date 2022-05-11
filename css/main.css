@@ -138,11 +138,11 @@ form:focus{
   color: #000;
 }
 
-.site-hero-content {
+.hero__content-text {
   border-left: 3px solid #888;
 }
 
-.hero__text {
+.text {
   padding-left: 40px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -155,7 +155,7 @@ form:focus{
   color: #777777;
 }
 
-.site-hero-link {
+.button {
   display: inline-block;
   width: 260px;
   color: #fff;
@@ -168,11 +168,11 @@ form:focus{
   text-align: center;
 }
 
-.site-hero-link:hover{
+.button:hover{
   opacity: 0.8;
 }
 
-.site-hero-link:active{
+.button:active{
   opacity: 0.6;
 }
 
@@ -188,13 +188,13 @@ form:focus{
   padding-bottom: 70px;
 }
 
-.site-hero-block{
+.hero-bottom__block {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.site-hero-but{
+.hero-bottom__box{
   width: 490px;
 }
 
@@ -268,7 +268,9 @@ form:focus{
   opacity: 0.6;
 }
 
+
 /* SITE-FOOTER */
+
 .site-footer {
   background-image: url(../images/runners.jpg);
   background-repeat: no-repeat;
@@ -276,20 +278,21 @@ form:focus{
   color: #fff;
 }
 
-.site-footer-block {
+.site-footer__block {
   padding-top: 240px;
   padding-bottom: 240px;
 }
 
-.site-footer-but {
+.site-footer__box {
   width: 490px;
   margin-left: auto;
 }
 
 
-.site-footer-content {
+.text {
   border-left: 3px solid #fff;
 }
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
