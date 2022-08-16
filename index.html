@@ -28,10 +28,13 @@
             <li class="sitenav__item"><a class="sitenav__link" href="index.html">Offers</a></li>
             <li class="sitenav__item"><a class="sitenav__link" href="index.html">Services</a></li>
           </ul>
-          <form class="sitenav__form" action="https://google.com" method="GET">
-            <input class="sitenav__input" type="text" placeholder="How can we help you?" aria-label="How can we help you?" required>
-          </form>
         </nav>
+        <form class="site-header__form" action="https://google.com" method="GET">
+          <input class="site-header__input" type="text" placeholder="How can we help you?" aria-label="How can we help you?" required>
+        </form>
+        <button class="open-button js-open-button" type="button">
+          <img class="menu-button" src="images/menu-burger.svg" alt="icon menu-burger" width="40" height="40">
+        </button>
       </div>
     </div>
   </header>
@@ -40,18 +43,12 @@
   <!-- SITE-MAIN -->
 
   <main class="main-content">
-      <div class="main-content__hero hero">
+      <div class="main-content__hero-img hero">
         <div class="hero__container container">
           <div class="hero__block">
-            <div class="hero__box">
-              <div>
-                <h2 class="hero__heading">Freedom calls.</h2>
-                <div class="hero__content-text">
-                  <p class="hero__text text">Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it all while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.</p>
-                </div>
-                <a class="hero__button button" href="#">Watch the keynote</a>
-              </div>
-            </div>
+            <h2 class="hero__heading">Freedom calls.</h2>
+            <p class="hero__text">Answer a call from your surfboard. Ask Siri to send a message. Stream your favorite songs on your run. And do it all while leaving your phone behind. Introducing Apple Watch Series 3 with cellular. Now you have the freedom to go with just your watch.</p>
+            <a class="hero__button button" href="#">Watch the keynote</a>
           </div>
         </div>
       </div>
@@ -84,9 +81,7 @@
           <div class="hero-bottom__block">
             <div class="hero-bottom__box">
               <h2 class="hero-bottom__heading">Nike Sport Band. Light. Flexible. Breathable.</h2>
-              <div class="hero-bottom__content hero__content-text">
-                <p class="hero-bottom__text text">Made from the same durable, lightweight fluoroelastomer as the original Apple Watch Sport Band, the Nike Sport Band reduces weight and improves ventilation via row after row of compression-molded perforations.</p>
-              </div>
+              <p class="hero__text">Made from the same durable, lightweight fluoroelastomer as the original Apple Watch Sport Band, the Nike Sport Band reduces weight and improves ventilation via row after row of compression-molded perforations.</p>
               <a class="hero-bottom__button button" href="#">Buy now</a>
             </div>
             <div class="hero-bottom__img">
@@ -103,14 +98,13 @@
   <footer class="site-footer">
     <div class="site-footer__block container">
       <div class="site-footer__box">
-        <h2 class="site-footer__title site-hero-heading">Take control of your health. </h2>
-        <div class="site-footer__content">
-          <p class="site-hero-text text">With built-in GPS and altimeter, Apple Watch Nike+ has all the features to help you take your run to the next level. You can even pair your watch wirelessly with compatible gym equipment. And it’s swimproof, so you can take a post-run dip in the pool.</p>
-        </div>
-        <a class="sitefooter__button button" href="#">Explore features</a>
+        <h2 class="site-footer__title">Take control of your health. </h2>
+          <p class="hero__text">With built-in GPS and altimeter, Apple Watch Nike+ has all the features to help you take your run to the next level. You can even pair your watch wirelessly with compatible gym equipment. And it’s swimproof, so you can take a post-run dip in the pool.</p>
+        <a class="site-footer__button button" href="#">Explore features</a>
       </div>
     </div>
   </footer>
 
+  <script src="js/app.js"></script>
 </body>
 </html>
